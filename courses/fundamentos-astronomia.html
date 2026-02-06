@@ -1,119 +1,146 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos de Astronomía - Lauren Flor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <title>Fundamentos de Astronomía - Lauren Flor-Torres</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body>
+<body class="is-preload">
 
-    <!-- Navigation -->
-    <header>
-        <div class="container navbar">
-            <div class="logo">Lauren Flor-Torres</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#">Cursos ▾</a>
-                    <div class="dropdown-menu">
-                        <a href="astronomia-practica-ii.html">Astronomía Práctica II</a>
-                        <a href="fundamentos-astronomia.html">Fundamentos de Astronomía</a>
-                        <a href="comunicacion-y-didactica.html">Comunicación y Didáctica</a>
-                    </div>
-                </li>
+    <!-- Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="../images/profile.jpeg" alt="" /></span>
+            <h1 id="logo"><a href="../index.html">Lauren Flor-Torres</a></h1>
+            <p>Astrofísica, Docente y Divulgadora</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">Sobre Mí</a></li>
+                <li><a href="../index.html#two" class="active">Cursos</a></li>
+                <li><a href="../index.html#three">Contacto</a></li>
             </ul>
-        </div>
-    </header>
-
-    <!-- Course Header -->
-    <section class="course-header">
-        <div class="container">
-            <h1>Fundamentos de Astronomía</h1>
-            <p>Una introducción comprensiva al universo y sus leyes físicas.</p>
-        </div>
+        </nav>
+        <footer>
+            <ul class="icons">
+                <li><a href="https://github.com/astrolaurenflor" class="icon brands fa-github"><span
+                            class="label">Github</span></a></li>
+                <li><a href="mailto:lauren.flor@udea.edu.co" class="icon solid fa-envelope"><span
+                            class="label">Email</span></a></li>
+            </ul>
+        </footer>
     </section>
 
-    <div class="container">
-        <!-- Objective -->
-        <section class="course-section">
-            <h2>Objetivo</h2>
-            <div class="highlight-box">
-                <p>
-                    Proporcionar a los estudiantes una visión panorámica y científica del universo, desde el sistema
-                    solar hasta la cosmología,
-                    comprendiendo los principios físicos fundamentales que rigen los cuerpos celestes.
-                </p>
-            </div>
-        </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-        <!-- Academic Calendar -->
-        <section class="course-section">
-            <h2>Calendario Académico</h2>
-            <div class="calendar-container" style="text-align: center;">
-                <img src="../images/calendario.png" alt="Calendario Académico"
-                    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Calendario 2026-1</p>
-            </div>
-        </section>
+        <!-- Main -->
+        <div id="main">
 
-        <!-- Plan de Asignatura -->
-        <section class="course-section">
-            <h2>Plan de Asignatura</h2>
-            <p>Descarga la estructura completa del curso aquí.</p>
-            <a href="#" class="btn" target="_blank">[ENLACE EXTERNO AL PLAN] Ver Plan de Asignatura</a>
-        </section>
+            <section>
+                <div class="container">
+                    <header class="major">
+                        <h2>Fundamentos de Astronomía</h2>
+                        <p>Una introducción comprensiva al universo y sus leyes físicas.</p>
+                    </header>
 
-        <!-- Agenda -->
-        <section class="course-section">
-            <h2>Agenda de Actividades</h2>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                <thead>
-                    <tr style="background-color: #f2f2f2; text-align: left;">
-                        <th style="padding: 10px; border-bottom: 2px solid #ddd;">Fecha</th>
-                        <th style="padding: 10px; border-bottom: 2px solid #ddd;">Tema</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Semana 1</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Historia de la Astronomía</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Semana 5</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Parcial 1: Sistema Solar</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                    <!-- Objetivo -->
+                    <h3>Objetivo</h3>
+                    <div class="box">
+                        <p>Proporcionar a los estudiantes una visión panorámica y científica del universo, desde el
+                            sistema solar hasta la cosmología, comprendiendo los principios físicos fundamentales que
+                            rigen los cuerpos celestes.</p>
+                    </div>
 
-        <!-- Materials -->
-        <section class="course-section">
-            <h2>Material de Clase</h2>
-            <div class="materials-list">
-                <div class="material-card">
-                    <h3>Tema 1: El Cielo a simple vista</h3>
-                    <p>Constelaciones y movimientos aparentes.</p>
-                    <a href="#" style="color: var(--accent-color); font-weight: 600;">[ENLACE PPT] Ver Presentación
-                        &rarr;</a>
+                    <!-- Calendario -->
+                    <h3>Calendario Académico</h3>
+                    <span class="image fit"><img src="../images/calendario.png" alt="Calendario Académico" /></span>
+                    <p>Calendario 2026-1</p>
+
+                    <!-- Plan de Asignatura -->
+                    <h3>Plan de Asignatura</h3>
+                    <p>Descarga la estructura completa del curso aquí.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button icon solid fa-file-alt" target="_blank">[ENLACE EXTERNO AL PLAN]
+                                Ver Plan de Asignatura</a></li>
+                    </ul>
+
+                    <!-- Agenda -->
+                    <h3>Agenda de Actividades</h3>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Tema</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Semana 1</td>
+                                    <td>Historia de la Astronomía</td>
+                                </tr>
+                                <tr>
+                                    <td>Semana 5</td>
+                                    <td>Parcial 1: Sistema Solar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Material de Clase -->
+                    <h3>Material de Clase</h3>
+                    <div class="features">
+                        <article>
+                            <div class="inner">
+                                <h4>Tema 1: El Cielo a simple vista</h4>
+                                <p>Constelaciones y movimientos aparentes.</p>
+                                <ul class="actions small">
+                                    <li><a href="#" class="button small icon solid fa-download">Ver Presentación</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="inner">
+                                <h4>Tema 2: Leyes de Kepler</h4>
+                                <p>Mecánica celeste básica.</p>
+                                <ul class="actions small">
+                                    <li><a href="#" class="button small icon solid fa-download">Ver Presentación</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
-                <div class="material-card">
-                    <h3>Tema 2: Leyes de Kepler</h3>
-                    <p>Mecánica celeste básica.</p>
-                    <a href="#" style="color: var(--accent-color); font-weight: 600;">[ENLACE PPT] Ver Presentación
-                        &rarr;</a>
-                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; Lauren Flor-Torres. Todos los derechos reservados.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
             </div>
         </section>
+
     </div>
 
-    <script src="../main.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrolly/0.0.1/jquery.scrolly.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/main.js"></script>
+
 </body>
 
 </html>
