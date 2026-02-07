@@ -28,10 +28,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 const entrega = row[5];
 
                 // Filter logic: Only show rows related to Practices (P1-P6) or Deliveries
-                // We check if "Temas" contains "P" followed by a number, or "Tipo de sesión" has "Práctica"
-                const isPractice = (tipoSesion && tipoSesion.includes('Práctica')) || (tema && /P\d/.test(tema));
+                // User requested ONLY activities related to Practices.
+                // 1. "Tipo de sesión" IS "Práctica"
+                // 2. OR "Temas" contains "P" + number (e.g. P1, P2)
+                // 3. OR "Entrega" is not empty (deadlines)
+                // 4. OR "Publicación" is not empty
 
-                if (isPractice && fecha) {
+                const isStrictPractice = tipoSesion === 'Práctica';
+                const hasPContent = tema && /P\d/.test(tema);
+                const hasDelivery = entrega && (entrega.trim().length > 1);
+                const hasPub = publicacion && (publicacion.trim().length > 1);
+
+                const shouldShow = isStrictPractice || hasPContent || hasDelivery || hasPub;
+
+                if (shouldShow && fecha) {
                     const tr = document.createElement('tr');
 
                     // Construct Activity Description
