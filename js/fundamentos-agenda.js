@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Filter for "Actividad", "Examen", or "Parcial" in the Topic column
                 if (tema.includes("Actividad") || tema.includes("Examen") || tema.includes("Parcial")) {
-                    console.log("Adding agenda item:", date, tema);
+                    console.log("Adding agenda item:", fecha, tema);
                     const tr = document.createElement("tr");
                     tr.innerHTML = `<td>${fecha}</td><td>${tema}</td>`;
                     tbody.appendChild(tr);
