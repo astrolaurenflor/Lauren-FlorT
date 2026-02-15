@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     tr.innerHTML = `<td>${fecha}</td><td>${tema}</td>`;
                     tbody.appendChild(tr);
                 }
+
+                // Map exams to evaluation table
+                if (tema.toLowerCase().includes("primer examen")) {
+                    const el = document.getElementById("date-examen-1");
+                    if (el) el.innerText = fecha;
+                } else if (tema.toLowerCase().includes("segundo examen")) {
+                    const el = document.getElementById("date-examen-2");
+                    if (el) el.innerText = fecha;
+                } else if (tema.toLowerCase().includes("tercer examen")) {
+                    const el = document.getElementById("date-examen-3");
+                    if (el) el.innerText = fecha;
+                }
             });
         })
         .catch(error => {
