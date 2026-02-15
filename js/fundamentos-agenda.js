@@ -26,5 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         })
-        .catch(error => console.error("Error loading agenda:", error));
+        .catch(error => {
+            console.error("Error loading agenda:", error);
+            document.querySelector("#agenda-body").innerHTML = `<tr><td colspan="2" style="color:red;">Error cargando fechas: ${error.message}</td></tr>`;
+        });
 });
