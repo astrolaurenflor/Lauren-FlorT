@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => {
             console.error("Error loading agenda:", error);
-            document.querySelector("#agenda-body").innerHTML = `<tr><td colspan="2" style="color:red;">Error cargando fechas: ${error.message}</td></tr>`;
+            const tbodyAgenda = document.querySelector("#agenda-body");
+            if (tbodyAgenda) tbodyAgenda.innerHTML = `<tr><td colspan="2" style="color:red;">Error cargando fechas: ${error.message}</td></tr>`;
         });
 });
