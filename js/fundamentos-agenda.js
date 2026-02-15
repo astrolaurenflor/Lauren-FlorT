@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("Adding agenda item:", fecha, tema);
                     const tr = document.createElement("tr");
                     tr.innerHTML = `<td>${tema}</td><td>${fecha}</td>`;
-                    tbody.appendChild(tr);
+                    if (tbodyAgenda) tbodyAgenda.appendChild(tr);
                 }
 
             });
