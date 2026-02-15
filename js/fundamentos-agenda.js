@@ -17,8 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const fecha = cols[1].trim();
                 const tema = cols[2].trim().replace(/^"|"$/g, ''); // Remove quotes if present
 
-                // Filter for "Actividad" or "Examen" in the Topic column
-                if (tema.includes("Actividad") || tema.includes("Examen")) {
+                // Filter for "Actividad", "Examen", or "Parcial" in the Topic column
+                if (tema.includes("Actividad") || tema.includes("Examen") || tema.includes("Parcial")) {
+                    console.log("Adding agenda item:", date, tema);
                     const tr = document.createElement("tr");
                     tr.innerHTML = `<td>${fecha}</td><td>${tema}</td>`;
                     tbody.appendChild(tr);
