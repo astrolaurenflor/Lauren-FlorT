@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (tema.includes("Actividad") || tema.includes("Examen") || tema.includes("Parcial")) {
                     console.log("Adding agenda item:", fecha, tema);
                     const tr = document.createElement("tr");
-                    tr.innerHTML = `<td>${fecha}</td><td>${tema}</td>`;
+                    tr.innerHTML = `<td>${tema}</td><td>${fecha}</td>`;
                     tbody.appendChild(tr);
                 }
 
