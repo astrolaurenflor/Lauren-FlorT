@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // Map exams to evaluation table
-                if (tema.toLowerCase().includes("primer examen")) {
+                if (tema.toLowerCase().includes("examen 1")) {
                     const el = document.getElementById("date-examen-1");
                     if (el) el.innerText = fecha;
-                } else if (tema.toLowerCase().includes("segundo examen")) {
+                } else if (tema.toLowerCase().includes("examen 2")) {
                     const el = document.getElementById("date-examen-2");
                     if (el) el.innerText = fecha;
-                } else if (tema.toLowerCase().includes("tercer examen")) {
+                } else if (tema.toLowerCase().includes("examen 3")) {
                     const el = document.getElementById("date-examen-3");
                     if (el) el.innerText = fecha;
                 }
