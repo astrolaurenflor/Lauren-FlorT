@@ -7,15 +7,27 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(data => {
             const rows = data.split("\n").slice(1); // Skip header
-            const tbody = document.querySelector("#agenda-body");
-            tbody.innerHTML = ""; // Clear existing manual content
+            const tbodyAgenda = document.querySelector("#agenda-body");
+            const tbodyOrg = document.querySelector("#organizacion-body");
+
+            if (tbodyAgenda) tbodyAgenda.innerHTML = "";
+            if (tbodyOrg) tbodyOrg.innerHTML = "";
 
             rows.forEach(row => {
                 const cols = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/); // Split by comma handling quotes
                 if (cols.length < 3) return;
 
+                const semana = cols[0].trim();
                 const fecha = cols[1].trim();
                 const tema = cols[2].trim().replace(/^"|"$/g, ''); // Remove quotes if present
+                const invitado = cols[3] ? cols[3].trim() : "";
+
+                // Populate Organization Table
+                if (tbodyOrg) {
+                    const trOrg = document.createElement("tr");
+                    trOrg.innerHTML = `<td>${semana}</td><td>${fecha}</td><td>${tema}</td><td>${invitado}</td>`;
+                    tbodyOrg.appendChild(trOrg);
+                }
 
                 // Filter for "Actividad", "Examen", or "Parcial" in the Topic column
                 if (tema.includes("Actividad") || tema.includes("Examen") || tema.includes("Parcial")) {
