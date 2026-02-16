@@ -60,18 +60,19 @@
                         <p>Estrategias para la enseñanza y divulgación efectiva de la ciencia.</p>
                     </header>
 
+
+
                     <!-- Información General -->
-                    <section>
-                        <h3>Información General del Curso</h3>
-                        <div class="row">
-                            <div class="col-6 col-12-medium">
-                                <ul>
-                                    <li><strong>Salón:</strong> 6-426</li>
-                                    <li><strong>Horario de Clase:</strong> Miércoles y Viernes, 4:00 - 6:00 PM</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                    <h3>Información General del Curso</h3>
+                    <div class="box">
+                        <ul class="alt">
+                            <li><strong>Salón:</strong> 6-426</li>
+                            <li><strong>Oficina:</strong> 6 - 235</li>
+                            <li><strong>Horarios de clase:</strong> Miércoles y Viernes, 4:00 - 6:00 PM</li>
+                            <li><strong>Correo institucional:</strong> lauren.flort@udea.edu.co</li>
+                        </ul>
+                    </div>
+
 
                     <!-- Objetivo -->
                     <h3>Objetivo</h3>
@@ -103,13 +104,24 @@
                     <!-- Organización del Curso -->
                     <h3>Organización del Curso</h3>
                     <p>Consulta la programación detallada de las sesiones:</p>
-                    <div class="box">
-                        <!-- Placeholder for Organization Iframe/Table when link is available -->
-                        <p><em>Enlace a la organización del curso pendiente.</em></p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Fecha</th>
+                                    <th>Tema</th>
+                                </tr>
+                            </thead>
+                            <tbody id="organizacion-body">
+                                <tr>
+                                    <td colspan="3">Cargando organización...</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
                     <!-- Agenda de Actividades -->
-                    <!-- Note: Kept existing structure or placeholder as user didn't explicitly ask to replace this but it usually follows Organization -->
                     <h3>Agenda de Actividades</h3>
                     <div class="table-wrapper">
                         <table>
@@ -220,6 +232,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrolly/0.0.1/jquery.scrolly.min.js"></script>
     <script src="../js/util.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/comunicacion-agenda.js"></script>
 
 </body>
 
