@@ -187,12 +187,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     const tipo = row[2] ? row[2].toLowerCase() : '';
                     const tema = row[3] ? row[3].toLowerCase() : '';
 
-                    if (tipo.includes('examen 1') || tema.includes('examen 1')) {
-                        examen1Date = row[1];
-                    }
-                    if (tipo.includes('examen 2') || tema.includes('examen 2')) {
-                        examen2Date = row[1];
-                    }
+                    if (tipo.includes('examen 1') || tema.includes('examen 1')) 
+                  
+                    if (tipo.includes('examen 2') || tema.includes('examen 2')) 
                 });
 
                 evalBody.innerHTML = `
