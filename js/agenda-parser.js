@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <td>${examen1Date}</td>
                     </tr>
                     <tr>
-                        <td>Examen Final</td>
+                        <td>Examen Parcial 2</td>
                         <td>20%</td>
                         <td>${examen2Date}</td>
                     </tr>
